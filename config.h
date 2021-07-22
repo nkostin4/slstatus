@@ -1,6 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
-/* Authentic signature from N. Kostin 2021-02-21 08:30:00 Moskva */
+/* Authentic signature from N. Kostin 2021-07-22 07:00:00 Moskva */
 
 /* interval between updates (in ms) */
 const unsigned int interval = 1000;
@@ -68,16 +68,9 @@ static const char unknown_str[] = "n/a";
 
 static const struct arg args[] = {
 	/* function format          argument */
-	//{ wifi_perc, "W: (%3s%% on ", "wlp8s0" },
-	// { uptime, "[UPTIME %s]  ", NULL },
-	// { netspeed_rx, "%sB/s  ", "enp0s3" },
 	{ run_command, "[VOL %4s]  ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
-	// { run_command, "[VOL  %4s ]  ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
 	{ cpu_perc, "[CPU %s%%]  ", NULL },
-	// { cpu_perc, "[CPU  %s%%]  ", NULL },
-	{ ram_perc, "[RAM %s%%]  ", NULL },
-	// { ram_perc, "[RAM  %s%%]  ", NULL },
+	{ ram_perc, "[RAM 🧠 %s%%]  ", NULL },
 	{ battery_perc, "[BAT %s%%]  ", "BAT0" },
-	// { battery_perc, "[BAT  %s%%]  ", "BAT0" },
 	{ datetime, "%s",           "%F %T" },
 };
