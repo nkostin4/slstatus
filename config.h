@@ -1,7 +1,5 @@
 /* See LICENSE file for copyright and license details. */
 
-/* Authentic signature from N. Kostin 2021-07-22 07:00:00 Moskva */
-
 /* interval between updates (in ms) */
 const unsigned int interval = 1000;
 
