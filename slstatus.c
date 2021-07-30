@@ -48,7 +48,7 @@ usage(void)
 int
 main(int argc, char *argv[])
 {
-    setlocale (LC_ALL, "ru_RU.utf8");
+	setlocale (LC_ALL, "ru_RU.utf8");
 	struct sigaction act;
 	struct timespec start, current, diff, intspec, wait;
 	size_t i, len;
