@@ -7,6 +7,7 @@
 #include <time.h>
 #include <X11/Xlib.h>
 
+#include "locale.h"
 #include "arg.h"
 #include "slstatus.h"
 #include "util.h"
@@ -47,6 +48,7 @@ usage(void)
 int
 main(int argc, char *argv[])
 {
+    setlocale (LC_ALL, "ru_RU.utf8");
 	struct sigaction act;
 	struct timespec start, current, diff, intspec, wait;
 	size_t i, len;
