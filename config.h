@@ -66,8 +66,8 @@ static const char unknown_str[] = "n/a";
 
 static const struct arg args[] = {
 	{ run_command, " 🔊 %4s  | ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
-	{ cpu_perc, " 💻 %s%%  | ", NULL },
-	{ ram_perc, " 🧠 %s%%  | ", NULL },
+	{ cpu_perc, " 🧠 %s%%  | ", NULL },
+	{ ram_perc, " 🐏 %s%%  | ", NULL },
 	{ battery_perc, " 🔋 %s%%  | ", "BAT0" },
 	{ datetime, " %s  | ",           "%A, %e %B %T" },
 	{ keymap, " %s ", NULL },
